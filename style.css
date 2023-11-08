@@ -4,7 +4,7 @@
 }
 #navbar-top{
     background-color:whitesmoke;
-    height: 10vh;
+    height: auto;
     margin-bottom: 4px;
 }
 .nav-bar-page{
@@ -71,10 +71,22 @@
     box-shadow: 0 0 10px rgb(0, 17, 255);
 }
 .content{
-    width: 30%;
-    padding-top: 30vh;
-    margin-left: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+    
 }
+
+.menu-icon {
+  height: 24px;
+
+}
+
+.nav-link svg {
+  height: 20px;
+}
+
 #btn1 button{
     font-size: 18px;
     color: rgb(6, 6, 121);
@@ -206,7 +218,28 @@
       color: rgb(219, 10, 219);
   }
 
-@media (min-width: 768px) and (max-width: 1199.98px) { 
-  
+  .d-inline a {
+    cursor: pointer;
+  }
 
+  .logo{
+    height: 90px;
+    width: 100%;
+  }
+  .logo-wrapper {
+    width: 100%;
+  }
+  .navbar {
+    flex-wrap: no-wrap;
+  }
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) { 
+  
+.logo{
+    height: 100px;
+    width: 300px;
+  }
 }
